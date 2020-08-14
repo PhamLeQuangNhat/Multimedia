@@ -4,7 +4,7 @@ import collections
 import pickle
 import time 
 
-def encode(textPaths, base_encode, time_exe_encode, compression_ratio):
+def encode(textPaths, base_encode, time_exe_encode, compression_ratio, compression_ratio_not_freq):
     stt = 0
     path_ratio_LZW = 'Result/LZW/ratio_LZW.txt'
 
@@ -29,13 +29,13 @@ def encode(textPaths, base_encode, time_exe_encode, compression_ratio):
         diff_time = (end_time - start_time) * 1000
         print("==========================================================")
         print('[INFO] Total run-time: {} ms'.format(diff_time))
-
+        
         with open(time_exe_encode, 'a+') as f:
             f.write(str(diff_time)+'\n')
-
+        
         with open(store_path, 'wb') as f:
             pickle.dump(values, f)
-    
+        
         with open(output_path, 'wb') as f:
             pickle.dump(values, f)
 
@@ -52,11 +52,14 @@ def encode(textPaths, base_encode, time_exe_encode, compression_ratio):
                             uncompressed_size, compressed_size,
                             uncompressed_size / compressed_size))
         print("==========================================================")
-
+        
         with open(compression_ratio, 'a+') as f:
             f.write(str(uncompressed_size / compressed_size)+'\n')
 
         with open(path_ratio_LZW, 'a+') as f:
+            f.write(str(uncompressed_size / compressed_size)+'\n')
+        
+        with open(compression_ratio_not_freq, 'a+') as f:
             f.write(str(uncompressed_size / compressed_size)+'\n')
         
         stt += 1
@@ -80,8 +83,10 @@ def decode(base_encode, base_decode, time_exe_decode):
         end_time = time.time()
         diff_time = (end_time - start_time) * 1000
 
-        print("[INFO] Result decode: {}".format(result))
+        #print("[INFO] Result decode: {}".format(result))
+        print("==========================================================")
         print('[INFO] Total run-time: {} ms'.format(diff_time))
+        print("==========================================================")
 
         with open(time_exe_decode, 'a+') as f:
             f.write(str(diff_time)+'\n')

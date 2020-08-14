@@ -11,7 +11,7 @@ def option():
 
     ap.add_argument("-n", "--name", required=True,
                     help="Name pyplot",
-                    choices=['1','2','3'])
+                    choices=['1','2','3','4'])
     ap.add_argument("-o", "--output", required=True,
                     help="output path pyplot")
 
@@ -23,7 +23,7 @@ def main():
 
     plt.style.use('seaborn')
     sns.set(style="darkgrid")
-
+    plt.ylim([0,100])
     with open(args['input'],'r') as infile:
         f = [float(x) for x in infile.read().split()]
 
@@ -45,6 +45,11 @@ def main():
     elif args['name'] == '3':
 
         name_pyplot = 'Compare Compression Ratio Encode'
+        name_y      = 'Compression ratio'
+    
+    elif args['name'] == '4':
+
+        name_pyplot = 'Compare Compression Ratio Encode Not Save Frequency Table'
         name_y      = 'Compression ratio'
 
     plt.boxplot(arr,labels=name)

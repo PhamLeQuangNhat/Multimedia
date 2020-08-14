@@ -11,6 +11,7 @@ textPaths = os.listdir("Data")
 time_exe_encode = 'time_exe_encode.txt'
 time_exe_decode = 'time_exe_decode.txt'
 compression_ratio = 'compression_ratio.txt'
+compression_ratio_not_freq = 'compression_ratio_not_freq.txt'
 
 def option():
     ap = argparse.ArgumentParser(description="The algorithm")
@@ -32,7 +33,7 @@ def main():
 
         if args['type'] == 'encode':
 
-            demo_arithmatic.encode(textPaths,base_encode,time_exe_encode, compression_ratio)
+            demo_arithmatic.encode(textPaths,base_encode,time_exe_encode, compression_ratio, compression_ratio_not_freq)
                 
         if args['type'] == 'decode':
 
@@ -45,7 +46,7 @@ def main():
 
         if args['type'] == 'encode':
 
-            demo_huffman.encode(textPaths,base_encode,time_exe_encode, compression_ratio)
+            demo_huffman.encode(textPaths,base_encode,time_exe_encode, compression_ratio,compression_ratio_not_freq)
 
         if args['type'] == 'decode':
 
@@ -59,7 +60,7 @@ def main():
 
         if args['type'] == 'encode':
 
-            demo_LZW.encode(textPaths,base_encode,time_exe_encode, compression_ratio)
+            demo_LZW.encode(textPaths,base_encode,time_exe_encode, compression_ratio,compression_ratio_not_freq)
             
         if args['type'] == 'decode':
 
@@ -72,7 +73,7 @@ def main():
 
         if args['type'] == 'encode':
 
-            demo_RLC.encode(textPaths,base_encode,time_exe_encode, compression_ratio)
+            demo_RLC.encode(textPaths,base_encode,time_exe_encode, compression_ratio,compression_ratio_not_freq)
             
         if args['type'] == 'decode':
 
@@ -85,7 +86,7 @@ def main():
 
         if args['type'] == 'encode':
 
-            demo_shannon.encode(textPaths,base_encode,time_exe_encode, compression_ratio)
+            demo_shannon.encode(textPaths,base_encode,time_exe_encode, compression_ratio,compression_ratio_not_freq)
             
         if args['type'] == 'decode':
 
