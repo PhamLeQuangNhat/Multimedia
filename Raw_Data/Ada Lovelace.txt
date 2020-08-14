@@ -1,0 +1,15 @@
+Ada Lovelace: The Enchantress of Numbers
+
+To say she was ahead of her time would be an understatement. Ada Lovelace earned her place in history as the first computer programmer - a full century before today's computers emerged.
+
+She couldn't have done it without British mathematician, inventor and engineer Charles Babbage. Their collaboration started in the early s, when Lovelace was just and still known by her maiden name of Byron. (She was the only legitimate child of poet Lord Byron.) Babbage had drawn up plans for an elaborate machine he called the Difference Engine - essentially, a giant mechanical calculator. In the middle of his work on it, the teenage Lovelace met Babbage at a party.
+
+There, he showed off an incomplete prototype of his machine. According to a family friend who was there: "While other visitors gazed at the working of this beautiful instrument with the sort of expression. . . that some savages are said to have shown on first seeing a looking-glass or hearing a gun. . . Miss Byron, young as she was, understood its working, and saw the great beauty of the invention."
+
+It was mathematical obsession at first sight. The two struck up a working relationship and eventual close friendship that would last until Lovelace's death in , when she was only. Babbage abandoned his Difference Engine to brainstorm a new Analytical Engine - in theory, capable of more complex number crunching - but it was Lovelace who saw that engine's true potential.
+
+The Analytical Engine was more than a calculator - its intricate mechanisms and the fact that the user fed it commands via a punch card meant the engine could perform nearly any mathematical task ordered. Lovelace even wrote instructions for solving a complex math problem, should the machine ever see the light of day. Many historians would later deem those instructions the first computer program, and Lovelace the first programmer. While she led a raucous life of gambling and scandal, it's her work in "poetical science," as she called it, that defines her legacy.
+
+In the words of Babbage himself, Lovelace was an "enchantress who has thrown her magical spell around the most abstract of Sciences and has grasped it with a force which few masculine intellects. . . could have exerted over it." - L.S.
+
+
